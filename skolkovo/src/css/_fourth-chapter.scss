@@ -1,0 +1,21 @@
+.fourth-chapter {
+    @include media('desktop-small') {
+        margin-top: 135px;
+    }
+    .person-block {
+        @include media('desktop-small') {
+            margin-bottom: 72px;
+        }
+    }
+}
+
+.header-padding {
+    &__fourth-chapter {
+        padding-right: 11px;
+        @include media('desktop-small') {
+            padding-right: 0;
+        }
+    }
+
+}
+

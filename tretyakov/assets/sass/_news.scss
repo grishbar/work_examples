@@ -1,0 +1,92 @@
+.news {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    @include media ('desktop-small-and-mobile') {
+        margin-top: 176px;
+        margin-bottom: 130px;
+    }
+    @include media ('mobile') {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    &__page-title {
+        font-family: "transgender_groteskregular";
+        font-weight: 400;
+        font-size: 51px;
+        line-height: 130%;
+        @include media ('desktop-small-and-mobile') {
+            font-size: 41px;
+        }
+        @include media ('mobile') {
+            font-size: 23px;
+        }
+    }
+    &__title {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__item {
+        margin: 70px 0;
+        position: relative;
+        display: flex;
+        @include media ('mobile') {
+        margin-top: 40px;
+        }
+    }
+
+    &__read-button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @include media ('mobile') {
+            bottom: -45px;
+            left: -9px;
+        }
+    }
+
+    &__read-button>img {
+        width: 27px;
+        height: 27px;
+    }
+
+    &__text {
+        font-family: "transgender_groteskregular";
+        font-weight: 400;
+        font-size: 41px;
+        line-height: 150%;
+        width: 100%;
+        max-width: 1200px;
+        margin-right: 90px;
+        @include media ('desktop-small-and-mobile') {
+            font-size: 31px;
+        }
+        @include media ('mobile') {
+            font-size: 17px;
+            margin-right: 0;
+        }
+    }
+    &__more-news-button {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-top: 130px;
+        @include media ('mobile') {
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 70px;
+        }
+    }
+}
+
+.news__item-container:nth-last-child(1) hr{
+    display: none;
+}

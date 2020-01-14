@@ -1,0 +1,44 @@
+body {
+    background: #1D2332;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    @include media ('mobile') {
+        background: #2D3445;
+    }
+}
+
+*:focus {
+    outline: none;
+}
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: #E86B4C;
+}
+
+p {
+    margin-top: 0;
+    @include media('desktop-small') {
+        margin-bottom: 0.7em;
+    }
+    @include media('tablet') {
+        margin-bottom: 0.5em;
+    }
+    @include media('mobile') {
+        margin-bottom: 0.6em;
+    }
+}
+
+h2 {
+    margin: 0;
+}
+
+.text-accent {
+    color: #E86B4C;
+}
+
+.hidden {
+    display: none !important;
+}

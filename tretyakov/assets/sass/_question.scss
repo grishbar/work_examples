@@ -1,0 +1,88 @@
+.questions {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    @include media ('desktop-small-and-mobile') {
+        margin-top: 176px;
+        margin-bottom: 130px;
+    }
+    @include media ('mobile') {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    &__more-questions-button {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-top: 57px;
+        @include media ('mobile') {
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 70px;
+        }
+    }
+}
+
+.question-item {
+    position: relative;
+    &__title {
+        font-family: "transgender_groteskregular";
+        font-weight: 400;
+        font-size: 41px;
+        line-height: 150%;
+        width: 100%;
+        max-width: 1200px;
+        margin-right: 90px;
+        margin-top: 90px;
+        margin-bottom: 80px;
+        @include media ('desktop-small-and-mobile') {
+            font-size: 31px;
+        }
+        @include media ('mobile') {
+            font-size: 17px;
+            margin-right: 0;
+        }
+    }
+
+    &__text-container {
+        margin-bottom: 90px;
+    }
+
+    &__text {
+        margin-top: 0;
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 140%;
+        max-width: 880px;
+        @include media ('desktop-small-and-mobile') {
+            font-size: 19px;
+        }
+        @include media ('mobile') {
+            font-size: 12px;
+            margin-right: 0;
+        }
+    }
+
+    &__btn {
+        background-image: url('./../../static/images/down-arrow.svg');
+        position: absolute;
+        right: 0;
+        height: 35.8px;
+        width: 29.1px;
+        bottom: 130px;
+        background-repeat: no-repeat;
+    }
+}
+
+#question-item__toggle {
+    opacity: 0;
+}
+
+
+.reversed {
+    background-image: url('./../../static/images/top-arrow.svg');
+    bottom: 100px;
+}

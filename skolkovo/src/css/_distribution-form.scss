@@ -1,0 +1,41 @@
+.distribution-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 642px;
+    height: 201px;
+    background: #161A23;
+    box-shadow: 0px 0px 10px #10131C;
+    border-radius: 10px;
+    margin-bottom: 93px;
+
+    &__title {
+        padding: 32px 30px 19px;
+        font-family: "DecimaProA";
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #BFCCD9;
+    }
+
+    &__input {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__email-input {
+
+        font-family: "Decima Mono Pro";
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 255px;
+        height: 50px;
+        padding-left: 25px;
+        border: 1px solid #E86B4C;
+        border-radius: 25px;
+        background: #161A23;
+        border-radius: 25px;
+        color: #BFCCD9;
+    }
+}

@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: $font-text;
+  font-weight: normal;
+  color: $color-black;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  box-shadow: 0 0 0 30px $color-white inset !important;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  margin: 0 48px;
+  @include media ('mobile') {
+    margin: 0 24px;
+  }
+}
+
+.important-text {
+  color: #FB5E5E;
+}

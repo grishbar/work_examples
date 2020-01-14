@@ -1,0 +1,24 @@
+// @import '../../node_modules/swiper/dist/css/swiper.css';
+@import 'normalize-scss';
+@import './../../node_modules/swiper/dist/css/swiper.min.css';
+@include normalize();
+
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'main';
+@import 'page-title';
+@import 'header';
+@import 'about';
+@import 'news';
+@import 'media';
+@import 'subscribe-block';
+@import 'footer';
+@import 'error-404';
+@import 'place';
+@import 'question';
+@import 'ask-question';
+
+.hidden {
+    display: none;
+}

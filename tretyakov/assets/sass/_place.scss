@@ -1,0 +1,24 @@
+.place {
+    margin-top: 300px;
+    @include media ('desktop-small-and-mobile') {
+        margin-top: 200px;
+    }
+    @include media ('mobile') {
+        margin-top: 63px;
+    }
+    &__title {
+        margin-bottom: 47px;
+    }
+    &__main-text {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 170%;
+        margin-bottom: 90px;
+    }
+}
+
+.hero-block {
+    margin-left: 370px;
+    border-left: 4px solid #D6DDE9;
+}

@@ -1,0 +1,69 @@
+.fact-block {
+  margin-left: 54px;
+  width: 206px;
+  display: flex;
+  @include media('tablet-and-mobile') {
+    display: none;
+  } 
+
+  &__number-five{
+    
+  }
+
+  &__maincontent {
+    width: 165px;
+    background: #161A23;
+    padding-bottom: 8px;
+  }
+
+  &__top-text {
+    padding-top: 10px;
+    font-family: DecimaProA;
+    font-size: 9px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BFCCD9;
+  }
+
+  &__main-number {
+    font-weight: 800;
+    font-family: Decima;
+    font-size: 74px;
+    line-height: 74px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F66B4C;
+    margin-bottom: -6px;
+    margin-top: 6px;
+  }
+
+  &__main-text {
+    font-family: Decima Mono Pro;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F66B4C;
+  }
+
+  &__text {
+    padding-top: 10px;
+    justify-content: center;
+    font-family: DecimaProA;
+    font-size: 11px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BFCCD9;
+  }
+
+  &__arrow {
+    margin-top: 20px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-left: 10px solid #161A23;
+  }
+}

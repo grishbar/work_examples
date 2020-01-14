@@ -1,0 +1,124 @@
+.three-ways {
+    position: relative;
+    background-color: #161A23;
+    z-index: 4;
+    &__map {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        height: 668px;
+        @include media('mobile') {
+            height: 283px;
+        }
+        .map {
+            display: block;
+            position: absolute;
+            width: 880px;
+            top: 90px;
+            left: 50%;
+            transform: translateX(-48.7%);
+            @include media('mobile') {
+                display: none;
+            }
+        }
+        .map-mobile {
+            display: none;
+            position: absolute;
+            width: 320px;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            @include media('mobile') {
+                display: block;
+            }
+        }
+    }
+
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+    @include media('mobile') {
+        display: block;
+        padding-bottom: 35px;
+    }
+    &__column {
+        max-width: 230px;
+        padding: 0 20px;
+        @include media('tablet') {
+            padding: 0 13px;
+        }
+        @include media('mobile') {
+            padding: 0 15px;
+            max-width: none;
+            margin-top: 30px;
+        }
+        &:first-child {
+            margin-right: 15px;
+            @include media('tablet-and-mobile') {
+                margin-right: 0;
+            }
+            @include media('mobile') {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__header-wrap {
+        min-height: 81px;
+        display: flex;
+        align-items: flex-end;
+        @include media('mobile') {
+            min-height: 0;
+            display: block;
+        }
+    }
+    &__header {
+        font-family: "Decima Mono Pro";
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: #BFCCD9;
+        margin-top: auto;
+        margin-bottom: 0;
+        width: 100%;
+        @include media('mobile') {
+            font-size: 14px;
+            line-height: 19px;
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__arrow {
+        padding: 5px 0 28px;
+        @include media('mobile') {
+            padding-bottom: 17px;
+        }
+    }
+   
+
+    &__text{
+        display: block;
+        font-family: "PF Centro Serif Pro";
+        font-size: 16px;
+        line-height: 25px;
+        color: #BFCCD9;
+        @include media('mobile') {
+            font-size: 15px;
+            line-height: 22px;
+        }
+    }
+
+    &__important-text {
+        display: inline;
+        color: #F66B4C;
+    }
+
+    &__text-paragraph {
+        padding: 0 0 10px;
+    }
+}

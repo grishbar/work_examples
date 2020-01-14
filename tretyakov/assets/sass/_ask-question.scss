@@ -1,0 +1,93 @@
+.ask-question {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    &__title {
+        font-family: "transgender_groteskregular";
+        font-weight: 400;
+        font-size: 37px;
+        line-height: 150%;
+        margin-bottom: 70px;
+    }
+
+    &__subtitle {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: 70px;
+    }
+}
+
+.ask-question-form {
+    &__top-inputs {
+        display: flex;
+    }
+
+    &__input {
+        font-family: "transgender_groteskregular";
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 150%;
+        width: 50%;
+        height: 150px;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+        padding-left: 47px;
+    }
+
+    &__input:nth-child(1) {
+        border-right: 1px solid #000000;
+    }
+
+    &__input:nth-child(2) {
+        border-left: 1px solid #000000;
+    }
+
+    &__input::-webkit-input-placeholder {
+        color: #000000;
+    } 
+
+    &__input::-moz-placeholder {
+        color: #000000;
+    }
+
+    &__area {
+        border: 2px solid #000000;
+        box-sizing: border-box;
+        height: 278px;
+        width: 100%;
+        resize: none;
+        border-top: none;
+        border-bottom: none;
+        font-family: "transgender_groteskregular";
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 150%;
+        padding: 47px;
+        vertical-align:top;
+    }
+
+    &__submit-button {
+        font-family: "transgender_groteskregular";
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 150%;
+        background: #F1EEF1;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+        width: 100%;
+        height: 150px;
+    }
+
+    &__agreement {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        margin-top: 27px;
+        width: 100%;
+        @include media ('mobile') {
+            width: 100%;
+        }
+    }
+}

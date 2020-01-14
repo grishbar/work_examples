@@ -1,0 +1,44 @@
+.form-title {
+    max-width: 578px;
+    font-family: "Decima Mono X";
+    font-size: 24px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #BFCCD9;
+    @include media('desktop-small') {
+        margin-top: -15px;
+    }
+    @include media('tablet') {
+        margin-top: -15px;
+    }
+    @include media('mobile') {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    &__wrap {
+        @include media('desktop-small') {
+            margin-bottom: 35px;
+        }
+        @include media('tablet') {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.header-padding {
+    &__eas-projects {
+        @include media('desktop') {
+            margin-bottom: 285px;
+        }
+    }
+
+    &__china-vvp {
+        padding-top: 374px;
+    }
+}
+
+.third-chapter {
+    &__image {
+        margin-top: -93px;
+    }
+}

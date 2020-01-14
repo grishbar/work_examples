@@ -1,0 +1,58 @@
+.photo-title {
+    position: absolute;
+    right: 0px;
+    bottom: 183px;
+    box-shadow: 0px 0px 17px #232836;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    @include media('mobile') {
+        position: static;
+        border-radius: 0;
+    }
+
+    &__container {
+        width: 742px;
+        // height: 177px;
+        background: #1D2332;
+        box-shadow: 0px 0px 17px #232836;
+
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        @include media('tablet') {
+            width: 715px;
+            max-width: 100%;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        @include media('mobile') {
+            height: auto;
+            width: auto;
+            border-radius: 0;
+        }
+    }
+
+    &__text {
+        padding-left: 48px;
+        padding-right: 37px;
+        padding-top: 37px;
+        padding-bottom: 37px;
+        font-family: Decima Mono Pro;
+        font-size: 37px;
+        line-height: 51px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #BFCCD9;
+        @include media('mobile') {
+            font-size: 23px;
+            line-height: 29px;
+            padding-left: 15px;
+            padding-top: 14px;
+            padding-right: 10px;
+            padding-bottom: 15px;
+            br {
+                display: none;
+            }
+        }
+    }
+}

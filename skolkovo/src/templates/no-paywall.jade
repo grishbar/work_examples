@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    include blocks/_google-tag-manager.html
+    include blocks/_yandex-metrica-counter.html
+    include blocks/_facebook-pixel-code.html
+    - var link = 'https://embahs.skolkovo.ru/ru/embahs/new-eurasia/'
+    include blocks/_head-meta-and-links.jade  
+  body
+    include blocks/_header.jade
+    include blocks/_first-chapter.jade
+    include blocks/_second-chapter.jade
+
+    include blocks/_third-chapter-without-form.jade
+    include blocks/_fourth-chapter.jade
+    include blocks/_form.jade
+
+    - var socialLink = encodeURIComponent(link);
+    include blocks/_before-footer-block.jade
+    include blocks/_footer.jade

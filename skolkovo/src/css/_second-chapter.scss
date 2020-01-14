@@ -1,0 +1,17 @@
+.second-chapter {
+    &__text {
+
+    }
+}
+
+.header-padding {
+    &__dodo {
+
+    }
+
+    &__2gis {
+        @include media('desktop') {
+            margin-bottom: 193px;
+        }
+    }
+}

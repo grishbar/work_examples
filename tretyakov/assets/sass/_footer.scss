@@ -1,0 +1,118 @@
+.footer {
+    &__row {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        @include media ('desktop-small-and-mobile') {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__navigation {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        @include media ('mobile') {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__navigation-two-items {
+        display: flex;
+        @include media ('mobile') {
+            flex-direction: column;
+        }
+    }
+
+    &__navigation-item {
+        font-family: "transgender_groteskregular";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        margin-right: 30px;
+        text-decoration: none;
+    }
+
+    &__icons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        @include media ('mobile') {
+            flex-wrap: wrap;
+            margin-left: -17px;
+        }
+    }
+
+    &__icon {
+        margin-right: 4%;
+
+        @include media ('desktop-small-and-mobile') {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        @include media ('mobile') {
+            transform: scale(0.8);
+            margin: 0;
+        }
+    }
+
+    &__icon:last-child {
+        margin-left: -10px;
+    }
+}
+
+.confidentional-policy-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.confidentional-policy {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+}
+
+.footer__authors {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include media ('desktop-small-and-mobile') {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.tretyakov-gallery {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    @include media ('desktop-small-and-mobile') {
+        margin-top: 24px;
+    }
+}
+
+.artel-media {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+
+    @include media ('desktop-small-and-mobile') {
+        margin-top: 24px;
+    }
+}

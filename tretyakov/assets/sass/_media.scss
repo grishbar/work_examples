@@ -1,0 +1,255 @@
+.media-container {
+    width: 100%;
+}
+
+.swiper-container .swiper-mobile-slide {
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+.swiper-mobile-slide:nth-child(2) {
+    -webkit-transform: translate3d(-95%,20px,0);
+    transform: translate3d(-95%,20px,0);
+}
+
+.swiper-mobile-slide:nth-child(3) {
+    -webkit-transform: translate3d(-95%,20px,0);
+    transform: translate3d(-95%,20px,0);
+}
+
+.swiper-container .swiper-slide-active {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.swiper-container .move-left-slide  {
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+    transition: all 1000ms ease 0s;
+}
+
+.swiper-container .set-active-slide  {
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+    transition: all 1000ms ease 0ms;
+}
+
+.swiper-container .set-next-slide {
+    -webkit-transform: translate3d(-195%,20px,0);
+    transform: translate3d(-195%,20px,0);
+    transition: all 1000ms ease 0ms;
+}
+
+.swiper-container .move-left-second-slide {
+    -webkit-transform: translate3d(-200%,0,0);
+    transform: translate3d(-200%,0,0);
+    transition: all 1000ms ease 0ms;
+}
+
+.swiper-container .set-active-third-slide {
+    -webkit-transform: translate3d(-200%,0,0);
+    transform: translate3d(-200%,0,0);
+    transition: all 1000ms ease 0ms;
+}
+
+.swiper-slide {
+    width: 95%;
+}
+
+.second-swipe {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: all 1000ms ease 0s;
+}
+.swiper-wrapper {
+    padding-bottom: 20px;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: all 1000ms ease 0s;
+}
+
+.swiper {
+    &-slide:hover &-title {
+        display: block;
+    }
+
+    &-slide:hover .media__slide-text {
+        display: block;
+    }
+
+    &-title {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        display: none;
+
+        @include media ('desktop-small-and-mobile') {
+            display: none;
+        }
+    }
+
+    &-button-prev-media,
+    &-button-next-media {
+        background-image: url(../../static/images/black-right-arrow.svg);
+        width: 90px;
+        height: 90px;
+        border: 4px solid #000000;
+        background-size: 27px 27px;
+        background-position: 24px 27px;
+        right: 48px;
+        top: 48px;
+        margin: 0;
+        @include media ('mobile') {
+            width: 27px;
+            height: 27px;
+            border: none;
+        }
+    }
+
+    &-button-prev-media {
+        transform: rotate(180deg);
+        left: 48px;
+        right: auto;
+        @include media ('mobile') {
+            left: auto;
+            right: 72px;
+        }
+    }
+
+    &-button-prev-media::after,
+    &-button-next-media::after {
+        content: '';
+        position: absolute;
+        background-image: url(../../static/images/black-right-arrow.svg);
+        background-size: 27px 27px;
+        background-position: 24px 27px;
+        width: 82px;
+        height: 82px;
+        display: block;
+        background-repeat: no-repeat;
+        @include media ('mobile') {
+            width: 27px;
+            height: 27px;
+            background-position: 0;
+        }
+    }
+
+    &-button-prev-media::before,
+    &-button-next-media::before {
+        content: '';
+        position: absolute;
+        width: 82px;
+        height: 82px;
+        display: block;
+        @include media ('mobile') {
+            width: 27px;
+            height: 27px;
+            display: none;
+        }
+    }
+
+    &-button-prev-media:hover::before,
+    &-button-next-media:hover::before {
+        background: linear-gradient(to right, #FB5E5E 30%, transparent 30%);
+    }
+
+    &-button-prev-media:active,
+    &-button-next-media:active {
+        border: 4px solid #ffffff;
+        @include media ('mobile') {
+            border: none;
+        }
+    }
+
+    &-button-prev-media:active::before,
+    &-button-next-media:active::before {
+        background: #FB5E5E;
+    }
+
+    &-slide-active {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+.media {
+    margin: 250px 0;
+
+    @include media ('desktop-small-and-mobile') {
+        margin: 180px 0;
+    }
+
+    @include media ('mobile') {
+        margin: 90px 0;
+    }
+
+    .swiper-button-disabled {
+        display: none;
+    }
+
+    &__slide {
+        height: 713px;
+        padding: 0 48px 66px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        @include media ('desktop-small-and-mobile') {
+            height: 598px;
+            padding: 0 48px 52px;
+        }
+
+        &-1 {
+            transition: all 1000ms ease 0s;
+            background-color: #D6DDE9;
+            z-index: 3;
+        }
+
+        &-2 {
+            transition: all 1000ms ease 0s;
+            background-color: #C9EFF3;
+            z-index: 2;
+        }
+
+        &-3 {
+            transition: all 1000ms ease 0s;
+            background-color: #D6DDE9;
+            z-index: 1;
+        }
+    }
+
+    &__slide-title {
+        font-family: "transgender_groteskregular";
+        font-weight: 400;
+        font-size: 37px;
+        line-height: 130%;
+        max-width: 500px;
+        margin-top: 52px;
+        margin-bottom: 40px;
+
+        @include media ('desktop-small-and-mobile') {
+            margin: 0;
+            font-size: 27px;
+        }
+        @include media ('desktop-small-and-mobile') {
+            font-size: 17px;
+        }
+    }
+
+
+    &__slide-text {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 150%;
+        max-width: 380px;
+        display: none;
+
+        @include media ('desktop-small-and-mobile') {
+            display: none;
+        }
+    }
+}

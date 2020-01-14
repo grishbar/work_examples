@@ -1,0 +1,221 @@
+.diagramm-block {
+    background: #161A23;
+    max-width: 811px;
+    padding: 70px 0;
+    margin: 0 auto;
+
+    &__title-ipo-count {
+        padding-top: 70px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    &__image3 {
+        margin-top: -240px;
+    }
+
+    &__title {
+        padding-left: 27px;
+        margin-bottom: 63px;
+        font-family: "Decima Mono Pro";
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: #BFCCD9;
+    }
+
+    &__directions-names {
+        padding-top: 16px;
+        display: flex;
+        padding-left: 27px;
+
+    }
+
+    &__mark {
+        &1 {
+            width: 10px;
+            height: 10px;
+            background: #F66B4C;
+            box-shadow: 0px 0px 7px #515A71;
+            border-radius: 5px;
+            margin-right: 7px;
+        }
+
+        &2 {
+            width: 10px;
+            height: 10px;
+            box-shadow: 0px 0px 7px #515A71;
+            background: #C4A4D7;
+            border-radius: 5px;
+            margin-right: 7px;
+        }
+
+        &3 {
+            width: 10px;
+            height: 10px;
+            box-shadow: 0px 0px 7px #515A71;
+            background: #BBCDDB;
+            border-radius: 5px;
+            margin-right: 7px;
+        }
+
+        &4 {
+            width: 10px;
+            height: 10px;
+            box-shadow: 0px 0px 7px #515A71;
+            background: #DD4B62;
+            border-radius: 5px;
+            margin-right: 7px;
+        }
+
+        &5 {
+            width: 10px;
+            height: 10px;
+            box-shadow: 0px 0px 7px #515A71;
+            background: #F6CA58;
+            border-radius: 5px;
+            margin-right: 7px;
+        }
+
+        &6 {
+            width: 10px;
+            height: 10px;
+            box-shadow: 0px 0px 7px #515A71;
+            background: #40F8E2;
+            border-radius: 5px;
+            margin-right: 7px;
+        }
+    }
+
+    &__name {
+        width: 100px;
+
+        margin-right: 25px;
+        font-family: "DecimaProA";
+        font-size: 12px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #BFCCD9;
+    }
+
+    &__sources {
+        margin-top: 30px;
+        padding-left: 27px;
+        font-family: "PF Centro Serif Pro";
+        font-size: 10px;
+        line-height: 20px;
+        color: #BFCCD9;
+        opacity: 0.5;
+    }
+
+    &__padding-inidia {
+        padding-left: 42px;
+    }
+}
+
+.diagramm-section {
+    position: relative;
+    background: #161A23;
+    z-index: 4;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    @include media('mobile') {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    .diagramm__frame {
+        &--desktop {
+            @include media('tablet-and-mobile') {
+                display: none;
+            }
+        }
+        &--mobile {
+            @include media('desktop') {
+                display: none;
+            }
+        }
+    }
+    .diagramm__source {
+        max-width: 786px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10px;
+        line-height: 20px;
+        color: #BFCCD9;
+        opacity: 0.5;
+        margin-top: -15px;
+        @include media('tablet-and-mobile') {
+            max-width: 252px;
+        }
+        a {
+            color: #E86B4C;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &--diagram-1 {
+        .diagramm__frame--desktop {
+            transform: translate(-13px);
+        }
+        .diagramm__source {
+            @include media('tablet-and-mobile') {
+                transform: translate(0px);
+            }
+        }
+    }
+    &--diagram-2 {
+        .diagramm__frame--desktop {
+            transform: translate(-12px);
+        }
+        .diagramm__source {
+            @include media('tablet-and-mobile') {
+                transform: translate(17px);
+            }
+        }
+    }
+    &--diagram-3 {
+        .diagramm__frame--desktop {
+            transform: translate(-51px);
+        }
+        .diagramm__source {
+            @include media('tablet-and-mobile') {
+                transform: translate(21px);
+            }
+        }
+    }
+    &--diagram-4 {
+        .diagramm__frame--desktop {
+            transform: translate(-7px);
+        }
+        .diagramm__source {
+            @include media('tablet-and-mobile') {
+                transform: translate(10px);
+            }
+        }
+    }
+    &--diagram-5 {
+        .diagramm__frame--desktop {
+            transform: translate(-13px);
+        }
+        .diagramm__source {
+            @include media('tablet-and-mobile') {
+                transform: translate(12px);
+            }
+        }
+    }
+}

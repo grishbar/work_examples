@@ -1,0 +1,64 @@
+#thanks-container.subscription-form.subscription-form--thanks.no-paywall.hidden
+  | СПАСИБО!
+#form-container.subscription-form.second-chapter__form-padding
+  form#bpmform.subscription-form__form
+    .subscription-form__title
+      span.text-accent ЗАПОЛНИТЕ АНКЕТУ 
+      | И МЫ ОТПРАВИМ ВАМ НА ПОЧТУ ТРИ ПОЛЕЗНЫХ СТРАТЕГИИ ВЫХОДА В РЕГИОН. 
+      span.text-accent ТРИ ПОЛЕЗНЫХ СТРАТЕГИИ ВЫХОДА В РЕГИОН.
+    .subscription-form__inputs
+      .subscription-form__input
+        input#first_name.subscription-form__input-element.subscription-form__age-input(type='text', placeholder='ИМЯ', name='first_name')
+      .subscription-form__input.subscription-form__input-right
+        input#last_name.subscription-form__input-element.subscription-form__email-input(type='text', placeholder='ФАМИЛИЯ', name='last_name')
+    .subscription-form__inputs
+      .subscription-form__input
+        input#email.subscription-form__input-element.subscription-form__age-input(type='text', placeholder='email', name='email')
+      .subscription-form__input.subscription-form__input-right
+        input#company.subscription-form__input-element.subscription-form__email-input(type='text', placeholder='название компании', name='company')
+    .subscription-form__inputs
+      .subscription-form__input
+        input#birthday.subscription-form__input-element.subscription-form__age-input(type='text', placeholder='дата рождения', name='birthday')
+      .subscription-form__input.subscription-form__input-right
+        input#title.subscription-form__input-element.subscription-form__email-input(type='text', placeholder='должность', name='title')
+    .subscription-form__inputs
+      .subscription-form__input
+        input#user-phone.subscription-form__input-element.subscription-form__age-input(type='text', placeholder='номер телефона', name='user-phone')
+    .english-level
+      .english-level__title уровень владения английским языком
+      .english-level__radios
+        label.english-level__container
+          | свободный
+          input.english-level__input(type='radio', name='englang', value='свободный')
+          span.english-level__checkmark
+        label.english-level__container
+          | разговорный
+          input.english-level__input(type='radio', name='englang', value='разговорный')
+          span.english-level__checkmark
+        label.english-level__container
+          | средний
+          input.english-level__input(type='radio', name='englang', value='средний')
+          span.english-level__checkmark
+        label.english-level__container
+          | базовый
+          input.english-level__input(type='radio', name='englang', value='базовый')
+          span.english-level__checkmark
+        label.english-level__container
+          | не владею
+          input.english-level__input(type='radio', name='englang', value='не владею')
+          span.english-level__checkmark
+    .last-line
+      .agree-block
+        label.agree-block__container
+          input.agree-block__input(type='checkbox', name='agree')
+          span.agree-block__checkmark
+        .agree-block__text
+          | Отправляя форму, вы подтверждаете, что ознакомлены и согласны с 
+          a(href='https://www.skolkovo.ru/static/personaldata_rus.html', target='_blank')
+            | условиями
+            | обработки
+            | персональных данных
+          |  и даете согласие на получение информационных рассылок о
+          |                             программе EMBA for Eurasia SKOLKOVO & HKUST
+      div
+        button#subscribe-button.subscription-form__subscribe-button(type='submit') отправить
